@@ -19,13 +19,11 @@ body {
   background-color: var(--cor-branco);
 }
 
-/*========== container da página ==========*/
 main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
   /*========== Pontos de quebra ==========*/
@@ -68,3 +66,5 @@ main {
   -moz-transition: all var(--transition-duracao) var(--transition-curva);
   -ms-transition: all var(--transition-duracao) var(--transition-curva);
 }
+
+/*========== container da página ==========*/
