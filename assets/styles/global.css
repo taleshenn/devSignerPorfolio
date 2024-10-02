@@ -1,0 +1,91 @@
+/*=============== RESET CSS ===============*/
+@import "./reset.css";
+
+/*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
+@import "./navbar.css";
+@import "./hero-section-top.css";
+@import "./hero-features-section.css";
+@import "./store.css";
+@import "./footer.css";
+
+@import "./media-queries.css";
+
+/*=============== FONTES DO GOOGLE ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/*=============== Fonte Padrão ===============*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cor-complementar-clara);
+}
+
+/*=============== VARIÁVEIS GLOBAIS CSS ===============*/
+:root {
+  /*========== Cores ==========*/
+  /* Modo de cor HSL (matiz, saturação, luminosidade)*/
+  --cor-primaria: hsl(45, 100%, 50%);
+  --cor-primaria-clara: hsl(45, 100%, 90%);
+  --cor-complementar: hsl(0, 0%, 13%);
+  --cor-complementar-media: hsl(0, 0%, 20%);
+  --cor-complementar-clara: hsl(0, 0%, 90%);
+  --cor-branco: hsl(0, 0%, 100%);
+  --cor-preto: hsl(0, 0%, 0%);
+  --cor-dividida-horizontal: linear-gradient(
+    to right,
+    var(--cor-primaria) 40%,
+    var(--cor-complementar) 40%
+  );
+  --cor-dividida-vertical: linear-gradient(
+    to top,
+    var(--cor-primaria) 60%,
+    var(--cor-complementar) 60%
+  );
+
+  /*========== Fonte e tipografia ==========*/
+  /* 0.5rem = 8px | 1rem = 16px  */
+  --fonte-primaria: "Montserrat", sans-serif;
+  --fonte-complementar: "Bebas Neue", sans-serif;
+  --fonte-tamanho-hero: 24rem;
+  --fonte-tamanho-grande: 2rem;
+  --fonte-tamanho-normal: 1rem;
+  --fonte-tamanho-media: 1.5rem;
+  --fonte-tamanho-pequeno: 0.5rem;
+
+  /*========== Peso da Fonte ==========*/
+  --fonte-peso-normal: 400;
+  --fonte-peso-media: 600;
+  --fonte-peso-bold: 700;
+
+  /*========== Imagens Hero e Thumbs==========*/
+  --imagem-hero-primeiro: url(/assets/images/components/hero-top/echoe/echoe.png);
+  --imagem-hero-primeiro-thumb: url(/assets/images/components/hero-top/echoe/echoe-thumb.png);
+  --imagem-hero-primeiro-header: url(/assets/images/components/hero-top/echoe/echoe.svg);
+  --imagem-hero-segundo: url(/assets/images/components/hero-top/rider/rider.png);
+  --imagem-hero-segundo-thumb: url(/assets/images/components/hero-top/rider/rider-thumb.png);
+  --imagem-hero-segundo-header: url(/assets/images/components/hero-top/rider/rider.svg);
+  --imagem-hero-terceiro: url(/assets/images/components/hero-top/swift/swift.png);
+  --imagem-hero-terceiro-thumb: url(/assets/images/components/hero-top/swift/swift-thumb.png);
+  --imagem-hero-terceiro-header: url(/assets/images/components/hero-top/swift/swift.svg);
+  --imagem-hero-quarto: url(/assets/images/components/hero-top/supra/supra.png);
+  --imagem-hero-quarto-thumb: url(/assets/images/components/hero-top/supra/supra-thumb.png);
+  --imagem-hero-quarto-header: url(/assets/images/components/hero-top/supra/supra.svg);
+
+  /*========== ÍCONES DIVERSOS  ==========*/
+  --imagem-arrow-amarela: url(/assets/images/generic/icons/arrow.svg);
+  --imagem-arrow-branca: url(/assets/images/generic/icons/arrow-white.svg);
+  --imagem-menu-icone-branco: url(/assets/images/generic/icons/menu-icone-branco.svg);
+  --imagem-menu-icone-amarelo: url(/assets/images/generic/icons/menu-icone-amarelo.svg);
+
+  /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
+  --transition-duracao: 0.3s;
+  --transition-curva: ease-in-out;
+}
+
+/*========== TRANSIÇÃO GLOBAL ==========*/
+.transition-all {
+  transition: all var(--transition-duracao) var(--transition-curva);
+  -webkit-transition: all var(--transition-duracao) var(--transition-curva);
+  -moz-transition: all var(--transition-duracao) var(--transition-curva);
+  -ms-transition: all var(--transition-duracao) var(--transition-curva);
+}
