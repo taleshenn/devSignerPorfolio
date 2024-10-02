@@ -19,8 +19,20 @@ body {
   background-color: var(--cor-branco);
 }
 
+/*========== container da página ==========*/
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
+  /*========== Pontos de quebra ==========*/
+  --max-width: 1440px;
+  --tablet-width: 1024px;
+  --mobile-width: 430px;
+
   /*========== Cores ==========*/
   /* Modo de cor HSL (matiz, saturação, luminosidade)*/
   --cor-primaria: hsl(90, 31%, 15%);
