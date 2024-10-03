@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  padding: 6rem;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--cor-primaria-clara);
+  height: 100%;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
