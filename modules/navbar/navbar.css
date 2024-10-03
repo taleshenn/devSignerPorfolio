@@ -21,7 +21,7 @@
   flex-shrink: 0;
 }
 
-.navbar__socials__icons {
+.navbar__socials__links {
   display: flex;
   justify-content: center;
   align-items: center;
