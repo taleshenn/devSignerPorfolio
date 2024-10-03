@@ -2,8 +2,8 @@
 @import "./reset.css";
 
 /*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
-/* @import "./navbar.css";
-@import "./hero-section-top.css";
+@import "/modules/navbar/navbar.css";
+/*@import "./hero-section-top.css";
 @import "./hero-features-section.css";
 @import "./store.css";
 @import "./footer.css"; */
@@ -27,9 +27,9 @@ main {
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
   /*========== Pontos de quebra ==========*/
-  --max-width: 1440px;
+  --desktop-width: 1440px;
   --tablet-width: 1024px;
-  --mobile-width: 430px;
+  --mobile-width: 240px;
 
   /*========== Cores ==========*/
   /* Modo de cor HSL (matiz, saturação, luminosidade)*/
