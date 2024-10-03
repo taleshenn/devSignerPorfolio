@@ -3,12 +3,7 @@
 
 /*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
 @import "/modules/navbar/navbar.css";
-/*@import "./hero-section-top.css";
-@import "./hero-features-section.css";
-@import "./store.css";
-@import "./footer.css"; */
-
-/* @import "./media-queries.css"; */
+@import "/modules/about/about.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -19,11 +14,39 @@ body {
   background-color: var(--cor-branco);
 }
 
+/*========== container da página ==========*/
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/*========== Tipografia ==========*/
+h1 {
+  font-size: var(--fonte-tamanho-hero);
+  color: var(--cor-primaria);
+  font-weight: var(--fonte-peso-bold);
+}
+
+h2 {
+  font-size: var(--fonte-tamanho-grande);
+  color: var(--cor-primaria);
+  font-weight: var(--fonte-peso-bold);
+}
+
+h3 {
+  font-size: var(--fonte-tamanho-media);
+  color: var(--cor-complementar);
+  font-weight: var(--fonte-peso-bold);
+}
+
+p {
+  font-size: var(--fonte-tamanho-normal);
+  color: var(--cor-preto);
+  font-weight: var(--fonte-peso-normal);
+  line-height: 1.5rem;
+}
+
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
   /*========== Pontos de quebra ==========*/
@@ -40,7 +63,7 @@ main {
   --cor-branco: hsl(0, 0%, 100%);
   --cor-preto: hsl(0, 0%, 0%);
 
-  /*========== Fonte e tipografia ==========*/
+  /*========== Fonte ==========*/
   /* 0.5rem = 8px | 1rem = 16px  */
   --fonte-primaria: "Inter", sans-serif;
   --fonte-tamanho-hero: 24rem;
@@ -66,5 +89,3 @@ main {
   -moz-transition: all var(--transition-duracao) var(--transition-curva);
   -ms-transition: all var(--transition-duracao) var(--transition-curva);
 }
-
-/*========== container da página ==========*/
