@@ -1,11 +1,20 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: 4rem;
-  max-width: var(--desktop-width);
   padding: 1rem 6rem;
+  position: fixed;
+  background-color: var(--cor-branco);
+}
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: var(--tablet-width);
 }
 .navbar__navigation {
   display: flex;
