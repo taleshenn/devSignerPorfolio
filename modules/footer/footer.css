@@ -2,8 +2,10 @@ footer {
   display: flex;
   align-self: stretch;
   padding: 4rem 6rem;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: var(--desktop-width);
 }
 
 .footer__logo {
