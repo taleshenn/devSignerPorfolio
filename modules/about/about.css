@@ -16,6 +16,9 @@
   max-width: var(--tablet-width);
   gap: 1rem;
 }
+.about__container h2 {
+  font-size: var(--fonte-tamanho-grande);
+}
 
 @media (max-width: 620px) {
   .about {
