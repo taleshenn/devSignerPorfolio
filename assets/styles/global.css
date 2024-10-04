@@ -6,6 +6,7 @@
 @import "/modules/about/about.css";
 @import "/modules/footer/footer.css";
 @import "/modules/hero/hero.css";
+@import "/modules/featured/featured.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -75,7 +76,7 @@ p {
   /* 0.5rem = 8px | 1rem = 16px  */
   --fonte-primaria: "Inter", sans-serif;
   --fonte-tamanho-grande: 2rem;
-  --fonte-tamanho-media: 1.5rem;
+  --fonte-tamanho-medio: 1.5rem;
   --fonte-tamanho-normal: 1rem;
   --fonte-tamanho-pequeno: 0.5rem;
 
