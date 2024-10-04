@@ -14,7 +14,7 @@
 /*=============== Fonte Padrão ===============*/
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--cor-branco);
+  background-color: var(--cor-cinza-claro);
 }
 
 /*========== container da página ==========*/
@@ -23,6 +23,13 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+.section-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 /*========== Tipografia ==========*/
@@ -71,6 +78,7 @@ p {
   --cor-complementar: hsl(45, 100%, 50%);
   --cor-branco: hsl(0, 0%, 100%);
   --cor-preto: hsl(0, 0%, 0%);
+  --cor-cinza-claro: hsl(0, 0%, 95%);
 
   /*========== Fonte ==========*/
   /* 0.5rem = 8px | 1rem = 16px  */
