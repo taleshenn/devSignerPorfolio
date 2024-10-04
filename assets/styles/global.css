@@ -5,6 +5,7 @@
 @import "/modules/navbar/navbar.css";
 @import "/modules/about/about.css";
 @import "/modules/footer/footer.css";
+@import "/modules/hero/hero.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -25,19 +26,19 @@ main {
 
 /*========== Tipografia ==========*/
 h1 {
-  font-size: var(--fonte-tamanho-hero);
-  color: var(--cor-primaria);
-  font-weight: var(--fonte-peso-bold);
-}
-
-h2 {
   font-size: var(--fonte-tamanho-grande);
   color: var(--cor-primaria);
   font-weight: var(--fonte-peso-bold);
 }
 
-h3 {
+h2 {
   font-size: var(--fonte-tamanho-media);
+  color: var(--cor-primaria);
+  font-weight: var(--fonte-peso-bold);
+}
+
+h3 {
+  font-size: var(--fonte-tamanho-normal);
   color: var(--cor-complementar);
   font-weight: var(--fonte-peso-bold);
 }
@@ -47,6 +48,11 @@ p {
   color: var(--cor-preto);
   font-weight: var(--fonte-peso-normal);
   line-height: 1.5rem;
+}
+
+.destaque {
+  color: var(--cor-complementar);
+  font-weight: bold;
 }
 
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
@@ -68,10 +74,9 @@ p {
   /*========== Fonte ==========*/
   /* 0.5rem = 8px | 1rem = 16px  */
   --fonte-primaria: "Inter", sans-serif;
-  --fonte-tamanho-hero: 24rem;
   --fonte-tamanho-grande: 2rem;
-  --fonte-tamanho-normal: 1rem;
   --fonte-tamanho-media: 1.5rem;
+  --fonte-tamanho-normal: 1rem;
   --fonte-tamanho-pequeno: 0.5rem;
 
   /*========== Peso da Fonte ==========*/
