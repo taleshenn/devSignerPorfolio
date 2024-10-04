@@ -85,12 +85,6 @@ footer {
   background-image: url("/modules/navbar/images/github-hover.svg");
 }
 
-@media (max-width: 820px) {
-  .footer__logo {
-    width: 20rem;
-  }
-}
-
 @media (max-width: 620px) {
   footer {
     flex-direction: column;
