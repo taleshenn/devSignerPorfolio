@@ -1,6 +1,5 @@
 footer {
   display: flex;
-  align-self: stretch;
   padding: 4rem 6rem;
   justify-content: space-around;
   align-items: center;
