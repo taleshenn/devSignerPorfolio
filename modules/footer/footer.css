@@ -96,6 +96,19 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+  }
+
+  .footer__navigation {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (max-height: 320px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
     align-self: stretch;
   }
 
