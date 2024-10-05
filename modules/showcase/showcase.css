@@ -101,6 +101,14 @@
   gap: 0.5rem;
 }
 
+@media (max-width: 1280px) {
+  .showcase__cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 620px) {
   .showcase {
     gap: 2rem;
