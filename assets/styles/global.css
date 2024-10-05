@@ -9,6 +9,8 @@
 @import "/modules/featured/featured.css";
 @import "/modules/expertises/expertises.css";
 @import "/modules/showcase/showcase.css";
+@import "/modules/contact/contact-whatsapp.css";
+@import "/modules/contact/contact-form.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -94,6 +96,7 @@ p {
   --fonte-tamanho-pequeno: 0.5rem;
 
   /*========== Peso da Fonte ==========*/
+  --fonte-peso-fina: 100;
   --fonte-peso-normal: 400;
   --fonte-peso-media: 600;
   --fonte-peso-bold: 700;
