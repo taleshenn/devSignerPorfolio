@@ -8,6 +8,7 @@
 @import "/modules/hero/hero.css";
 @import "/modules/featured/featured.css";
 @import "/modules/expertises/expertises.css";
+@import "/modules/showcase/showcase.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -36,26 +37,21 @@ main {
 /*========== Tipografia ==========*/
 h1 {
   font-size: var(--fonte-tamanho-grande);
-  color: var(--cor-primaria);
   font-weight: var(--fonte-peso-bold);
 }
 
 h2 {
-  font-size: var(--fonte-tamanho-media);
-  color: var(--cor-primaria);
+  font-size: var(--fonte-tamanho-medio);
   font-weight: var(--fonte-peso-bold);
 }
 
 h3 {
   font-size: var(--fonte-tamanho-normal);
-  color: var(--cor-complementar);
   font-weight: var(--fonte-peso-bold);
 }
 
 p {
-  font-size: var(--fonte-tamanho-normal);
-  color: var(--cor-preto);
-  font-weight: var(--fonte-peso-normal);
+  color: var(--cor-primaria);
   line-height: 1.5rem;
 }
 
