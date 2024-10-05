@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   max-width: var(--tablet-width);
 }
 .expertises__header {
@@ -70,6 +70,12 @@
 }
 
 @media (max-width: 620px) {
+  .expertises {
+    padding: 2rem;
+  }
+  .expertises__cards__content {
+    gap: 1rem;
+  }
 }
 
 @media (max-height: 320px) {
