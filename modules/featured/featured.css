@@ -112,7 +112,7 @@
   .featured__header__text h3 {
     font-size: var(--fonte-tamanho-normal);
   }
-  .featured__header__text h1 {
+  .featured__header__text h2 {
     font-size: calc(var(--fonte-tamanho-grande) * 1.5);
     color: var(--cor-branco);
   }
