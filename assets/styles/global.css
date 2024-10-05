@@ -60,6 +60,14 @@ p {
   font-weight: bold;
 }
 
+/*========== TRANSIÇÃO GLOBAL ==========*/
+.transition-all {
+  transition: all var(--transition-duracao) var(--transition-curva);
+  -webkit-transition: all var(--transition-duracao) var(--transition-curva);
+  -moz-transition: all var(--transition-duracao) var(--transition-curva);
+  -ms-transition: all var(--transition-duracao) var(--transition-curva);
+}
+
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
   /*========== Pontos de quebra ==========*/
@@ -93,12 +101,4 @@ p {
   /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
   --transition-duracao: 0.3s;
   --transition-curva: ease-in-out;
-}
-
-/*========== TRANSIÇÃO GLOBAL ==========*/
-.transition-all {
-  transition: all var(--transition-duracao) var(--transition-curva);
-  -webkit-transition: all var(--transition-duracao) var(--transition-curva);
-  -moz-transition: all var(--transition-duracao) var(--transition-curva);
-  -ms-transition: all var(--transition-duracao) var(--transition-curva);
 }
