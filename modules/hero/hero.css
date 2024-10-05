@@ -46,8 +46,10 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-.hero__header__button:active {
-  transform: scale(0.95);
+
+.hero__header__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .hero__avatar {
