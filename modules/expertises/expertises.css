@@ -68,3 +68,18 @@
   font-weight: var(--fonte-peso-bold);
   color: var(--cor-primaria);
 }
+
+@media (max-width: 620px) {
+}
+
+@media (max-height: 320px) {
+  .expertises {
+    padding: 2rem;
+  }
+
+  .expertises__cards__content {
+    padding: 1.5rem;
+    gap: 1rem;
+    width: fit-content;
+  }
+}
