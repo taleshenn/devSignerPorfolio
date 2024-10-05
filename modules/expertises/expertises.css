@@ -24,7 +24,7 @@
   gap: 1rem;
 }
 .expertises__header h2 {
-  font-size: calc(var(--fonte-tamanho-grande) * 2);
+  font-size: calc(var(--fonte-tamanho-grande) * 1.5);
   color: var(--cor-branco);
 }
 
