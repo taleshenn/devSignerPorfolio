@@ -71,9 +71,9 @@ p {
 /*=============== VARIÁVEIS GLOBAIS CSS ===============*/
 :root {
   /*========== Pontos de quebra ==========*/
-  --desktop-width: 1440px;
-  --tablet-width: 1024px;
-  --mobile-width: 240px;
+  --desktop-width: 80rem;
+  --tablet-width: 64rem;
+  --mobile-width: 16rem;
 
   /*========== Cores ==========*/
   /* Modo de cor HSL (matiz, saturação, luminosidade)*/
