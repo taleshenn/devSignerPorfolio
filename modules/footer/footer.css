@@ -1,0 +1,127 @@
+footer {
+  display: flex;
+  padding: 4rem 6rem;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: var(--desktop-width);
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 24rem;
+  flex-shrink: 0;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer__social-links,
+.footer__navigation__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__navigation li a:hover {
+  text-decoration: underline;
+  color: var(--cor-complementar);
+}
+
+.footer__linkedin_icon {
+  background-image: url("/modules/footer/images/linkedin-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.footer__linkedin_icon:hover {
+  background-image: url("/modules/footer/images/linkedin-hover.svg");
+}
+
+.footer__behance_icon {
+  background-image: url("/modules/footer/images/behance-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.footer__behance_icon:hover {
+  background-image: url("/modules/footer/images/behance-hover.svg");
+}
+
+.footer__instagram_icon {
+  background-image: url("/modules/footer/images/instagram-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.footer__instagram_icon:hover {
+  background-image: url("/modules/footer/images/instagram-hover.svg");
+}
+
+.footer__github_icon {
+  background-image: url("/modules/footer/images/github-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.footer__github_icon:hover {
+  background-image: url("/modules/navbar/images/github-hover.svg");
+}
+
+@media (max-width: 620px) {
+  footer {
+    flex-direction: column;
+    padding: 2rem 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .footer__logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .footer__navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (max-height: 320px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    align-self: stretch;
+  }
+
+  .footer__navigation {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}

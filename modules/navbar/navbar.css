@@ -1,0 +1,152 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 3rem;
+  position: fixed;
+  background-color: var(--cor-branco);
+  box-shadow: 0px 0px 2px var(--cor-primaria-clara);
+  z-index: 99;
+}
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: var(--tablet-width);
+}
+.navbar__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__navigation li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.navbar__navigation li a:hover {
+  text-decoration: underline;
+  color: var(--cor-complementar);
+}
+
+.navbar__logo {
+  flex-shrink: 0;
+}
+
+.navbar__socials__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__linkedin_icon {
+  background-image: url("/modules/navbar/images/linkedin-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar__linkedin_icon:hover {
+  background-image: url("/modules/navbar/images/linkedin-hover.svg");
+}
+
+.navbar__behance_icon {
+  background-image: url("/modules/navbar/images/behance-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar__behance_icon:hover {
+  background-image: url("/modules/navbar/images/behance-hover.svg");
+}
+
+.navbar__instagram_icon {
+  background-image: url("/modules/navbar/images/instagram-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar__instagram_icon:hover {
+  background-image: url("/modules/navbar/images/instagram-hover.svg");
+}
+
+.navbar__github_icon {
+  background-image: url("/modules/navbar/images/github-default.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar__github_icon:hover {
+  background-image: url("/modules/navbar/images/github-hover.svg");
+}
+
+.navbar__menu-icon {
+  display: none;
+}
+
+.navbar__navigation.active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 98;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  padding: 4rem;
+  background: var(--cor-primaria-clara);
+}
+
+.navbar__navigation.active li {
+  margin: 1rem 0;
+}
+
+.overlay.active {
+  position: fixed;
+  top: 4rem;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: 97;
+  pointer-events: all;
+}
+
+.navbar__navigation.active + .overlay {
+  pointer-events: all;
+}
+
+@media (max-width: 820px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar__socials__links {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .navbar {
+    min-width: var(--mobile-width);
+  }
+
+  .navbar__navigation {
+    display: none;
+  }
+  .navbar__menu-icon {
+    display: block;
+  }
+}

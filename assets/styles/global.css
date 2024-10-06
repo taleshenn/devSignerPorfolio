@@ -2,84 +2,64 @@
 @import "./reset.css";
 
 /*=============== IMPORTAÇÃO DE OUTROS ESTILOS ===============*/
-@import "./navbar.css";
-@import "./hero-section-top.css";
-@import "./hero-features-section.css";
-@import "./store.css";
-@import "./footer.css";
-
-@import "./media-queries.css";
+@import "/modules/navbar/navbar.css";
+@import "/modules/about/about.css";
+@import "/modules/footer/footer.css";
+@import "/modules/hero/hero.css";
+@import "/modules/featured/featured.css";
+@import "/modules/expertises/expertises.css";
+@import "/modules/showcase/showcase.css";
+@import "/modules/contact/contact-whatsapp.css";
+@import "/modules/contact/contact-form.css";
 
 /*=============== FONTES DO GOOGLE ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /*=============== Fonte Padrão ===============*/
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--cor-complementar-clara);
+  font-family: "Inter", sans-serif;
+  background-color: var(--cor-cinza-claro);
 }
 
-/*=============== VARIÁVEIS GLOBAIS CSS ===============*/
-:root {
-  /*========== Cores ==========*/
-  /* Modo de cor HSL (matiz, saturação, luminosidade)*/
-  --cor-primaria: hsl(45, 100%, 50%);
-  --cor-primaria-clara: hsl(45, 100%, 90%);
-  --cor-complementar: hsl(0, 0%, 13%);
-  --cor-complementar-media: hsl(0, 0%, 20%);
-  --cor-complementar-clara: hsl(0, 0%, 90%);
-  --cor-branco: hsl(0, 0%, 100%);
-  --cor-preto: hsl(0, 0%, 0%);
-  --cor-dividida-horizontal: linear-gradient(
-    to right,
-    var(--cor-primaria) 40%,
-    var(--cor-complementar) 40%
-  );
-  --cor-dividida-vertical: linear-gradient(
-    to top,
-    var(--cor-primaria) 60%,
-    var(--cor-complementar) 60%
-  );
+/*========== container da página ==========*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.section-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
 
-  /*========== Fonte e tipografia ==========*/
-  /* 0.5rem = 8px | 1rem = 16px  */
-  --fonte-primaria: "Montserrat", sans-serif;
-  --fonte-complementar: "Bebas Neue", sans-serif;
-  --fonte-tamanho-hero: 24rem;
-  --fonte-tamanho-grande: 2rem;
-  --fonte-tamanho-normal: 1rem;
-  --fonte-tamanho-media: 1.5rem;
-  --fonte-tamanho-pequeno: 0.5rem;
+/*========== Tipografia ==========*/
+h1 {
+  font-size: var(--fonte-tamanho-grande);
+  font-weight: var(--fonte-peso-bold);
+}
 
-  /*========== Peso da Fonte ==========*/
-  --fonte-peso-normal: 400;
-  --fonte-peso-media: 600;
-  --fonte-peso-bold: 700;
+h2 {
+  font-size: var(--fonte-tamanho-medio);
+  font-weight: var(--fonte-peso-bold);
+}
 
-  /*========== Imagens Hero e Thumbs==========*/
-  --imagem-hero-primeiro: url(/assets/images/components/hero-top/echoe/echoe.png);
-  --imagem-hero-primeiro-thumb: url(/assets/images/components/hero-top/echoe/echoe-thumb.png);
-  --imagem-hero-primeiro-header: url(/assets/images/components/hero-top/echoe/echoe.svg);
-  --imagem-hero-segundo: url(/assets/images/components/hero-top/rider/rider.png);
-  --imagem-hero-segundo-thumb: url(/assets/images/components/hero-top/rider/rider-thumb.png);
-  --imagem-hero-segundo-header: url(/assets/images/components/hero-top/rider/rider.svg);
-  --imagem-hero-terceiro: url(/assets/images/components/hero-top/swift/swift.png);
-  --imagem-hero-terceiro-thumb: url(/assets/images/components/hero-top/swift/swift-thumb.png);
-  --imagem-hero-terceiro-header: url(/assets/images/components/hero-top/swift/swift.svg);
-  --imagem-hero-quarto: url(/assets/images/components/hero-top/supra/supra.png);
-  --imagem-hero-quarto-thumb: url(/assets/images/components/hero-top/supra/supra-thumb.png);
-  --imagem-hero-quarto-header: url(/assets/images/components/hero-top/supra/supra.svg);
+h3 {
+  font-size: var(--fonte-tamanho-normal);
+  font-weight: var(--fonte-peso-bold);
+}
 
-  /*========== ÍCONES DIVERSOS  ==========*/
-  --imagem-arrow-amarela: url(/assets/images/generic/icons/arrow.svg);
-  --imagem-arrow-branca: url(/assets/images/generic/icons/arrow-white.svg);
-  --imagem-menu-icone-branco: url(/assets/images/generic/icons/menu-icone-branco.svg);
-  --imagem-menu-icone-amarelo: url(/assets/images/generic/icons/menu-icone-amarelo.svg);
+p {
+  color: var(--cor-primaria);
+  line-height: 1.5rem;
+}
 
-  /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
-  --transition-duracao: 0.3s;
-  --transition-curva: ease-in-out;
+.destaque {
+  color: var(--cor-complementar);
+  font-weight: bold;
 }
 
 /*========== TRANSIÇÃO GLOBAL ==========*/
@@ -88,4 +68,40 @@ body {
   -webkit-transition: all var(--transition-duracao) var(--transition-curva);
   -moz-transition: all var(--transition-duracao) var(--transition-curva);
   -ms-transition: all var(--transition-duracao) var(--transition-curva);
+}
+
+/*=============== VARIÁVEIS GLOBAIS CSS ===============*/
+:root {
+  /*========== Pontos de quebra ==========*/
+  --desktop-width: 80rem;
+  --tablet-width: 64rem;
+  --mobile-width: 16rem;
+
+  /*========== Cores ==========*/
+  /* Modo de cor HSL (matiz, saturação, luminosidade)*/
+  --cor-primaria: hsl(90, 31%, 15%);
+  --cor-primaria-media: hsl(69, 7%, 37%);
+  --cor-primaria-clara: hsl(93, 14%, 84%);
+  --cor-complementar: hsl(45, 100%, 50%);
+  --cor-branco: hsl(0, 0%, 100%);
+  --cor-preto: hsl(0, 0%, 0%);
+  --cor-cinza-claro: hsl(0, 0%, 95%);
+
+  /*========== Fonte ==========*/
+  /* 0.5rem = 8px | 1rem = 16px  */
+  --fonte-primaria: "Inter", sans-serif;
+  --fonte-tamanho-grande: 2rem;
+  --fonte-tamanho-medio: 1.5rem;
+  --fonte-tamanho-normal: 1rem;
+  --fonte-tamanho-pequeno: 0.5rem;
+
+  /*========== Peso da Fonte ==========*/
+  --fonte-peso-fina: 100;
+  --fonte-peso-normal: 400;
+  --fonte-peso-media: 600;
+  --fonte-peso-bold: 700;
+
+  /*========== PARÂMETROS DA TRANSIÇÃO GLOBAL ==========*/
+  --transition-duracao: 0.3s;
+  --transition-curva: ease-in-out;
 }

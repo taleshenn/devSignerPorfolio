@@ -3,7 +3,527 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tales Henn DevDesigner Portfólio</title>
+    <link rel="stylesheet" href="/assets/styles/global.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="overlay"></div>
+      <nav class="navbar">
+        <div class="navbar_wrapper">
+          <div class="navbar__logo">
+            <a href="#"
+              ><img src="/modules/navbar/images/logo.svg" alt="logo tales henn"
+            /></a>
+          </div>
+
+          <ul class="navbar__navigation">
+            <li><a href="#" class="transition-all">Início</a></li>
+            <li><a href="#about" class="transition-all">Sobre</a></li>
+            <li><a href="#portfolio" class="transition-all">Portfólio</a></li>
+            <li><a href="#contato" class="transition-all">Contato</a></li>
+          </ul>
+
+          <div class="navbar__socials__links">
+            <a href="https://www.linkedin.com/in/taleshenn/" target="_blank"
+              ><div class="navbar__linkedin_icon transition-all"></div
+            ></a>
+            <a href="https://www.behance.net/taleshenn" target="_blank"
+              ><div class="navbar__behance_icon transition-all"></div
+            ></a>
+            <a href="https://www.instagram.com/taleshenn/" target="_blank"
+              ><div class="navbar__instagram_icon transition-all"></div
+            ></a>
+            <a href="https://github.com/taleshenn" target="_blank"
+              ><div class="navbar__github_icon transition-all"></div
+            ></a>
+          </div>
+          <div class="navbar__menu-icon">
+            <img src="/modules/navbar/images/menu-icon.svg" alt="menu mobile" />
+          </div>
+        </div>
+      </nav>
+      <div class="section-wrapper">
+        <section class="hero">
+          <div class="hero__header">
+            <div class="hero__header__text">
+              <h3>O que eu faço?</h3>
+              <h1>
+                Eu crio <span class="destaque">Soluções</span> em design para
+                mídias digitais e impressas.
+              </h1>
+              <p>
+                Conecto marca e público através da criação de identidade visual,
+                desenvolvimento web e fotografia especializada.
+              </p>
+            </div>
+            <button
+              class="hero__header__button transition-all"
+              onclick="window.open('https://api.whatsapp.com/message/O4BK5AR4C2VKF1?autoload=1&app_absent=0', '_blank')"
+              aria-label="Abrir conversa no WhatsApp"
+            >
+              <img
+                src="./modules/hero/images/whatsapp-icon.svg"
+                alt="logo whatsapp"
+              />
+              <span>Fale comigo</span>
+            </button>
+          </div>
+          <figure class="hero__avatar">
+            <img
+              src="./modules/hero/images/hero__avatar__img.png"
+              alt="foto tales henn"
+            />
+          </figure>
+        </section>
+
+        <section id="about" class="about">
+          <div class="about__container">
+            <h2>Um pouco sobre minha história.</h2>
+            <p>
+              Sou um profissional multidisciplinar com anos de experiência em
+              design gráfico, fotografia e gestão de projetos. Comecei como
+              tipógrafo já aos 14 anos de idade e com o chegada da era digital
+              evoluí para designer, diagramador e arte finalista, desenvolvendo
+              um forte senso estético e habilidades de resolução de problemas.
+            </p>
+            <p>
+              Minha paixão pela imagem me levou à fotografia, onde me
+              especializei fotografia comercial e tratamento de imagem High End
+              para moda, beleza e e-commerce.
+            </p>
+            <p>
+              Atualmente, como freelancer, presto serviços como retoucher e
+              designer gráfico, entregando soluções criativas e eficientes.
+              Minha jornada de aprendizado contínuo me leva à programação, onde
+              estou desenvolvendo projetos front-end com HTML, CSS e JavaScript,
+              ampliando meu portfólio e oferecendo soluções mais completas aos
+              meus clientes.
+            </p>
+          </div>
+        </section>
+
+        <section class="expertises">
+          <div class="expertises__wrapper">
+            <div class="expertises__header">
+              <h3 class="destaque">Desenvolvimento e Design</h3>
+              <h2>Minhas Expertises</h2>
+            </div>
+            <div class="expertises__cards">
+              <div class="expertises__cards__content">
+                <div
+                  class="expertises__cards__content__icons"
+                  aria-label="Habilidades de edição de fotos"
+                >
+                  <img
+                    src="./modules/expertises/images/photoshop.svg"
+                    alt="logo adobe photoshop"
+                  />
+                  <img
+                    src="./modules/expertises/images/lightroom.svg"
+                    alt="logo adobe lightroom"
+                  />
+                </div>
+                <div class="expertises__cards__content__text">
+                  <h3>
+                    Fotografia Especializada <br />
+                    Retoque Digital
+                  </h3>
+                  <p>
+                    Minha expertise me permite criar imagens que complementam de
+                    forma eficiente a linguagem da identidade visual.
+                  </p>
+                </div>
+              </div>
+              <div class="expertises__cards__content">
+                <div
+                  class="expertises__cards__content__icons"
+                  aria-label="Habilidades de Editoração Gráfica"
+                >
+                  <img
+                    src="./modules/expertises/images/illustrator.svg"
+                    alt="logo adobe illustrator"
+                  />
+                  <img
+                    src="./modules/expertises/images/indesign.svg"
+                    alt="logo adobe indesign"
+                  />
+                </div>
+                <div class="expertises__cards__content__text">
+                  <h3>Design Gráfico <br />Identidade visual</h3>
+                  <p>
+                    A identidade visual é a primeira impressão de uma marca e
+                    meu foco é causar um impacto duradouro na mente do usuário.
+                  </p>
+                </div>
+              </div>
+              <div class="expertises__cards__content">
+                <div
+                  class="expertises__cards__content__icons"
+                  aria-label="Habilidades de desenvolvimento web"
+                >
+                  <img
+                    src="./modules/expertises/images/vscode.svg"
+                    alt="logo vs code"
+                  />
+                  <img
+                    src="./modules/expertises/images/figma.svg"
+                    alt="logo figma"
+                  />
+                  <img
+                    src="./modules/expertises/images/html.svg"
+                    alt="logo html"
+                  />
+                  <img
+                    src="./modules/expertises/images/css.svg"
+                    alt="logo css"
+                  />
+                  <img
+                    src="./modules/expertises/images/javascript.svg"
+                    alt="logo javascript"
+                  />
+                </div>
+                <div class="expertises__cards__content__text">
+                  <h3>UI/UX & <br />Front-end Design</h3>
+                  <p>
+                    Como designer de interface busco contribuir para uma
+                    excelente experiência do usuário desde o conceito á
+                    execução.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured">
+          <div class="featured__header">
+            <div class="featured__header__text">
+              <h3 class="destaque">Responsividade</h3>
+              <h2>Web<span class="destaque">Design</span></h2>
+              <p>Design responsivos e otimizados para sites de busca.</p>
+            </div>
+            <div class="icons__technologies">
+              <img
+                src="./modules/featured/images/bootstrap-logo.svg"
+                alt="logo bootstrap"
+              />
+              <img
+                src="./modules/featured/images/react-logo.svg"
+                alt="logo react"
+              />
+              <img
+                src="./modules/featured/images/tailwind-logo.svg"
+                alt="logo tailwind"
+              />
+            </div>
+          </div>
+          <figure class="featured__avatar">
+            <img
+              src="./modules/featured/images/featured__avatar-img.png"
+              alt="avatar destaque"
+            />
+          </figure>
+        </section>
+
+        <section id="portfolio" class="showcase">
+          <div class="showcase__header">
+            <div class="showcase__header-text">
+              <h3 aria-label="Exemplo de trabalho real">
+                Veja esse exemplo de um trabalho real que fez uso de
+              </h3>
+              <h2 aria-label="Fotografia Especializada">
+                Fotografia Especializada
+              </h2>
+            </div>
+            <button
+              class="showcase__cta transition-all"
+              onclick="window.open('https://www.behance.net/taleshenn', '_blank')"
+              aria-label="Visitar o portfólio de Tales Henn no Behance"
+            >
+              <img
+                src="/modules/showcase/images/behance-logo.svg"
+                alt="Logo do Behance"
+              />
+              <span>Visite meu Behance</span>
+            </button>
+          </div>
+
+          <div class="showcase__cards">
+            <div class="showcase__cards__content">
+              <img
+                src="/modules/showcase/images/showcase-img-captura.png"
+                alt="Imagem de uma câmera fotográfica"
+              />
+              <div class="showcase__cards__text">
+                <h2>Captura</h2>
+                <p>
+                  Sessão fotográfica baseada na demanda criada pelo projeto de
+                  identidade visual.
+                </p>
+              </div>
+            </div>
+
+            <div class="showcase__cards__content">
+              <figure>
+                <img
+                  src="/modules/showcase/images/showcase-img-antes_depois.png"
+                  alt="Imagem antes e depois da edição."
+                />
+              </figure>
+              <div class="showcase__cards__text">
+                <h2>Ambientação</h2>
+                <p>
+                  As imagens passam por curadoria e ajustes de tons e cores para
+                  uso de acordo com o design criado.
+                </p>
+              </div>
+            </div>
+
+            <div class="showcase__cards__content">
+              <figure>
+                <img
+                  src="/modules/showcase/images/showcase-img-aplicacao.png"
+                  alt="Aplição da foto em arte e post do Instagram"
+                />
+              </figure>
+              <div class="showcase__cards__text">
+                <h2>Aplicação</h2>
+                <p>
+                  As imagens são meticulosamente aplicadas de acordo com o
+                  conteúdo da postagem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="contato" class="contact">
+        <h2 class="contact-form__title">Fale comigo</h2>
+        <button class="contact-toggle"><p>+++ Abrir Formulário +++</p></button>
+        <fieldset class="contact-form">
+          <div class="contact-form__header">
+            <p class="contact-form__subtitle">
+              Use o formulário abaixo para enviar sua mensagem.
+            </p>
+          </div>
+          <legend>Formulário de contato</legend>
+          <div class="contact-form__content">
+            <form class="contact-form__inputs">
+              <div class="contact-form__personal-data">
+                <div class="contact-form__input-group">
+                  <label for="nome">Nome:</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Apenas o primeiro nome"
+                    aria-label="Digite seu primeiro nome."
+                    disabled
+                  />
+                </div>
+                <div class="contact-form__input-group">
+                  <label for="sobrenome">Sobrenome:</label>
+                  <input
+                    type="text"
+                    id="sobrenome"
+                    name="sobrenome"
+                    placeholder="Aqui vai o restante do seu nome."
+                    aria-label="Digite o restante do seu nome."
+                    disabled
+                  />
+                </div>
+                <div class="contact-form__input-group">
+                  <label for="email">E-mail:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Use o formato seunome@exemplo.com.br"
+                    aria-label="Digite seu email. Não esqueça o sinal do @."
+                    disabled
+                  />
+                </div>
+                <div class="contact-form__input-group">
+                  <label for="telefone">Telefone:</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(XX) XXXX-XXXX"
+                    aria-label="Digite seu número de telefone."
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="contact__form__subject">
+                <label for="assunto">Escolha o assunto:</label>
+                <div class="contact__form__wrapper disabled">
+                  <div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assunto1"
+                        name="assunto"
+                        value="Identidade visual"
+                      />
+                      <label for="assunto1">Identidade visual</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assunto2"
+                        name="assunto"
+                        value="Design de artes gráficas"
+                      />
+                      <label for="assunto2">Design de artes gráficas</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assunto3"
+                        name="assunto"
+                        value="Design de artes para redes sociais"
+                      />
+                      <label for="assunto3"
+                        >Design de artes para redes sociais</label
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assunto4"
+                        name="assunto"
+                        value="Desenvolvimento web"
+                      />
+                      <label for="assunto4">Desenvolvimento web</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assunto5"
+                        name="assunto"
+                        value="Fotografia e Edição"
+                      />
+                      <label for="assunto5">Fotografia e Edição</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="assuntoOutro"
+                        name="assunto"
+                        value="outro"
+                      />
+                      <label for="assuntoOutro"
+                        >Outro (Descreva no campo abaixo)</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form__message__container">
+                <div class="contact-form__message">
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Sua mensagem aqui"
+                    aria-label="Digite sua mensagem."
+                    maxlength="500"
+                    disabled
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact-form__submit">
+                <button
+                  type="button"
+                  class="contact-form__submit__btn transition-all"
+                  aria-label="Enviar a mensagem."
+                  disabled
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+        </fieldset>
+      </section>
+
+      <section class="contact__whatsapp-cta">
+        <div class="contact__whatsapp-wrapper">
+          <h2>Whats<span>App</span></h2>
+          <p>
+            Não gosta de formulários ou esperar? Mande uma mensagem direta já
+            explicando o motivo do contato. Fique a vontade para mandar áudio.
+          </p>
+          <button class="contact__whatsapp-cta__button transition-all"
+          onclick="window.open('https://api.whatsapp.com/message/O4BK5AR4C2VKF1?autoload=1&app_absent=0', '_blank')"
+              aria-label="Abrir conversa no WhatsApp">
+            Mandar mensagem
+          </button>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__logo">
+          <div class="footer__logo__img">
+            <a href="#"
+              ><img src="/modules/navbar/images/logo.svg" alt="logo tales henn"
+            /></a>
+          </div>
+          <div class="footer__logo__description">
+            <p>
+              Nunca subestime o poder da resiliência, pois é o caminho que
+              transforma desafios em oportunidades e nos conduz às nossas
+              conquistas.
+            </p>
+          </div>
+        </div>
+        <div class="footer__navigation">
+          <ul class="footer__navigation__links">
+            <li><a href="#" class="transition-all">Início</a></li>
+            <li><a href="#about" class="transition-all">Sobre</a></li>
+            <li><a href="#portfolio" class="transition-all">Portfólio</a></li>
+            <li><a href="#contato" class="transition-all">Contato</a></li>
+          </ul>
+          <div class="footer__social-links">
+            <a
+              href="https://www.linkedin.com/in/taleshenn/"
+              target="_blank"
+              aria-label="Perfil no LinkedIn"
+            >
+              <div class="footer__linkedin_icon transition-all"></div>
+            </a>
+            <a
+              href="https://www.behance.net/taleshenn"
+              target="_blank"
+              aria-label="Portfólio no Behance"
+            >
+              <div class="footer__behance_icon transition-all"></div>
+            </a>
+            <a
+              href="https://www.instagram.com/taleshenn/"
+              target="_blank"
+              aria-label="Perfil no Instagram"
+            >
+              <div class="footer__instagram_icon transition-all"></div>
+            </a>
+            <a
+              href="https://github.com/taleshenn"
+              target="_blank"
+              aria-label="Perfil no Github"
+            >
+              <div class="footer__github_icon transition-all"></div>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="modules/contact/contact-form.js"></script>
+    <script src="modules/navbar/navbar.js"></script>
+
+
+  </body>
 </html>
