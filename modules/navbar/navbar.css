@@ -8,6 +8,7 @@
   position: fixed;
   background-color: var(--cor-branco);
   box-shadow: 0px 0px 2px var(--cor-primaria-clara);
+  z-index: 99;
 }
 .navbar_wrapper {
   display: flex;
