@@ -8,6 +8,7 @@
   </head>
   <body>
     <main>
+      <div class="overlay"></div>
       <nav class="navbar">
         <div class="navbar_wrapper">
           <div class="navbar__logo">
@@ -19,8 +20,8 @@
           <ul class="navbar__navigation">
             <li><a href="#" class="transition-all">Início</a></li>
             <li><a href="#about" class="transition-all">Sobre</a></li>
-            <li><a href="#showcase" class="transition-all">Portfólio</a></li>
-            <li><a href="#contact" class="transition-all">Contato</a></li>
+            <li><a href="#portfolio" class="transition-all">Portfólio</a></li>
+            <li><a href="#contato" class="transition-all">Contato</a></li>
           </ul>
 
           <div class="navbar__socials__links">
@@ -225,7 +226,7 @@
           </figure>
         </section>
 
-        <section class="showcase">
+        <section id="portfolio" class="showcase">
           <div class="showcase__header">
             <div class="showcase__header-text">
               <h3 aria-label="Exemplo de trabalho real">
@@ -298,7 +299,7 @@
         </section>
       </div>
 
-      <section class="contact">
+      <section id="contato" class="contact">
         <h2 class="contact-form__title">Fale comigo</h2>
         <button class="contact-toggle"><p>+++ Abrir Formulário +++</p></button>
         <fieldset class="contact-form">
@@ -457,7 +458,9 @@
             Não gosta de formulários ou esperar? Mande uma mensagem direta já
             explicando o motivo do contato. Fique a vontade para mandar áudio.
           </p>
-          <button class="contact__whatsapp-cta__button transition-all">
+          <button class="contact__whatsapp-cta__button transition-all"
+          onclick="window.open('https://api.whatsapp.com/message/O4BK5AR4C2VKF1?autoload=1&app_absent=0', '_blank')"
+              aria-label="Abrir conversa no WhatsApp">
             Mandar mensagem
           </button>
         </div>
@@ -482,8 +485,8 @@
           <ul class="footer__navigation__links">
             <li><a href="#" class="transition-all">Início</a></li>
             <li><a href="#about" class="transition-all">Sobre</a></li>
-            <li><a href="#showcase" class="transition-all">Portfólio</a></li>
-            <li><a href="#contact" class="transition-all">Contato</a></li>
+            <li><a href="#portfolio" class="transition-all">Portfólio</a></li>
+            <li><a href="#contato" class="transition-all">Contato</a></li>
           </ul>
           <div class="footer__social-links">
             <a
@@ -519,6 +522,7 @@
       </footer>
     </main>
     <script src="modules/contact/contact-form.js"></script>
+    <script src="modules/navbar/navbar.js"></script>
 
 
   </body>
