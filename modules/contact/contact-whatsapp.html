@@ -9,14 +9,20 @@
   <body>
     <main>
       <section class="contact__whatsapp-cta">
-        <h2>Whats<span>App</span></h2>
-        <p>
-          Não gosta de formulários ou esperar? Mande uma mensagem direta já
-          explicando o motivo do contato. Fique a vontade para mandar áudio.
-        </p>
-        <button class="contact__whatsapp-cta__button transition-all">
-          Mandar mensagem
-        </button>
+        <div class="contact__whatsapp-wrapper">
+          <h2>Whats<span>App</span></h2>
+          <p>
+            Não gosta de formulários ou esperar? Mande uma mensagem direta já
+            explicando o motivo do contato. Fique a vontade para mandar áudio.
+          </p>
+          <button
+            class="contact__whatsapp-cta__button transition-all"
+            onclick="window.open('https://api.whatsapp.com/message/O4BK5AR4C2VKF1?autoload=1&app_absent=0', '_blank')"
+            aria-label="Abrir conversa no WhatsApp"
+          >
+            Mandar mensagem
+          </button>
+        </div>
       </section>
     </main>
   </body>
