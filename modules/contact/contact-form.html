@@ -10,14 +10,11 @@
     <main>
          <section id="contato" class="contact">
         <h2 class="contact-form__title">Fale comigo</h2>
-        <button class="contact-toggle"><p>+++ Abrir Formulário +++</p></button>
+        <button class="contact-toggle">
+          <span>+++ Abrir Formulário +++</span>
+        </button>
         <fieldset class="contact-form">
-          <div class="contact-form__header">
-            <p class="contact-form__subtitle">
-              Use o formulário abaixo para enviar sua mensagem.
-            </p>
-          </div>
-          <legend>Formulário de contato</legend>
+          <div class="contact-form__header"></div>
           <div class="contact-form__content">
             <form class="contact-form__inputs">
               <div class="contact-form__personal-data">
@@ -30,7 +27,7 @@
                     placeholder="Apenas o primeiro nome"
                     aria-label="Digite seu primeiro nome."
                     disabled
-                  />
+                  >
                 </div>
                 <div class="contact-form__input-group">
                   <label for="sobrenome">Sobrenome:</label>
@@ -41,7 +38,7 @@
                     placeholder="Aqui vai o restante do seu nome."
                     aria-label="Digite o restante do seu nome."
                     disabled
-                  />
+                  >
                 </div>
                 <div class="contact-form__input-group">
                   <label for="email">E-mail:</label>
@@ -52,7 +49,7 @@
                     placeholder="Use o formato seunome@exemplo.com.br"
                     aria-label="Digite seu email. Não esqueça o sinal do @."
                     disabled
-                  />
+                  >
                 </div>
                 <div class="contact-form__input-group">
                   <label for="telefone">Telefone:</label>
@@ -63,20 +60,15 @@
                     placeholder="(XX) XXXX-XXXX"
                     aria-label="Digite seu número de telefone."
                     disabled
-                  />
+                  >
                 </div>
               </div>
               <div class="contact__form__subject">
-                <label for="assunto">Escolha o assunto:</label>
+                <label >Escolha o assunto:</label>
                 <div class="contact__form__wrapper disabled">
                   <div>
                     <div>
-                      <input
-                        type="radio"
-                        id="assunto1"
-                        name="assunto"
-                        value="Identidade visual"
-                      />
+                      <input type="radio" id="assunto1" name="assunto" value="Identidade visual" >
                       <label for="assunto1">Identidade visual</label>
                     </div>
                     <div>
@@ -85,7 +77,7 @@
                         id="assunto2"
                         name="assunto"
                         value="Design de artes gráficas"
-                      />
+                      >
                       <label for="assunto2">Design de artes gráficas</label>
                     </div>
                     <div>
@@ -94,10 +86,8 @@
                         id="assunto3"
                         name="assunto"
                         value="Design de artes para redes sociais"
-                      />
-                      <label for="assunto3"
-                        >Design de artes para redes sociais</label
                       >
+                      <label for="assunto3">Design de artes para redes sociais</label>
                     </div>
                   </div>
                   <div>
@@ -107,7 +97,7 @@
                         id="assunto4"
                         name="assunto"
                         value="Desenvolvimento web"
-                      />
+                      >
                       <label for="assunto4">Desenvolvimento web</label>
                     </div>
                     <div>
@@ -116,19 +106,12 @@
                         id="assunto5"
                         name="assunto"
                         value="Fotografia e Edição"
-                      />
+                      >
                       <label for="assunto5">Fotografia e Edição</label>
                     </div>
                     <div>
-                      <input
-                        type="radio"
-                        id="assuntoOutro"
-                        name="assunto"
-                        value="outro"
-                      />
-                      <label for="assuntoOutro"
-                        >Outro (Descreva no campo abaixo)</label
-                      >
+                      <input type="radio" id="assuntoOutro" name="assunto" value="outro" >
+                      <label for="assuntoOutro">Outro (Descreva no campo abaixo)</label>
                     </div>
                   </div>
                 </div>
@@ -157,6 +140,7 @@
                 </button>
               </div>
             </form>
+          </div>
         </fieldset>
       </section>
     </main>
